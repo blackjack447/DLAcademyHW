@@ -67,7 +67,7 @@ def sort_to_max(origin_list):
         for j in range(i  +1, n):
             if origin_list[i] > origin_list[j]:
                 origin_list[i],origin_list[j] = origin_list[j], origin_list[i]
-                return origin_list
+    return origin_list
 print(sort_to_max([2, 10, -12, 2.5, 20, -11, 4, 4, 0]))
 
 print('\n')
@@ -81,7 +81,7 @@ def my_filter(a, b):
             result.append(i)
         else:
             continue
-            return result
+    return result
 
 #print((my_filter((lambda i: i < 25), b=[1, 100, 500, 7, 8, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10])))
 
