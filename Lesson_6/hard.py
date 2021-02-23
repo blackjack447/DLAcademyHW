@@ -26,10 +26,11 @@ def tuch(file_name): #tuch
 
 def rm(rm_file_name):  #rm
     if not rm_file_name:
-        print('Что удалить ?: ')
+        print('Что удалить ? - ')
         return
     try:
         os.remove(rm_file_name)
+        print('Файл {} - удален'.format(rm_file_name))
     except FileNotFoundError:
         print('Файл не найден')
 
