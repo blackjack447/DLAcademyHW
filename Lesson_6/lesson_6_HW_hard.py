@@ -37,12 +37,12 @@ print('sys.argv = ', sys.argv)
 def see_way():# ls
     print(os.getcwd())
 
-def new_file(): #tuch
+def new_file(file_name): #tuch
     if not file_name:
         print('Укажите имя файла вторым параметром: ')
         return
     try:
-        with open('file_name','w+'):
+        with open(file_name,'w+'):
             print('Фйайл {} -  создан'.format(file_name))
     except NameError:
         print('файл {} с таким именем уже существует'.format(file_name))
@@ -70,9 +70,9 @@ def make_dir():  #mkdir
 help_dict = {'touch':new_file,'rm':rm_file,'mkdir':make_dir}
 
 try:
-    file_name = sys.argv[2]
+    new_file = sys.argv[2]
 except IndexError:
-    file_name = None
+    new_file = None
 
 try:
     rm_file_name = sys.argv[2]

@@ -55,6 +55,23 @@ pattern = '[a-z]+'
 print(re.findall(pattern, line))
 print('\n')
 
+upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+lower = 'abcdefghijklmnopqrstuvwxyz'
+without_re = []
+var = ''
+for i in line:
+       if i in lower:
+              var = var + i
+       elif i in upper and var!="":
+              without_re.append(var)
+              var=""
+if var!="":
+       without_re.append(var)
+print(without_re)
+
+print('\n')
+
+
 # Задание-2:
 # Вывести символы в верхнем регистре, слева от которых находятся
 # два символа в нижнем регистре, а справа - два символа в верхнем регистре.
