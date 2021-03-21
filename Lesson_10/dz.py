@@ -53,7 +53,7 @@ if __name__ == '__main__':
         if i.name == h:
             i.quantity -= 1
             print(f'Спасибо за покупку, вот Ваши {i.name}')
-            for _ in shop.product_lst:
+            for i in shop.product_lst:
                 print(f'В продаже остались {i.name} цене {i.cost} за кг. в кол-ве {i.quantity} кг.')
 
     a = FruitProduct('11082054', 'Финики', 100, 15, 'Египет', 100)
