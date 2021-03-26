@@ -124,7 +124,6 @@ if __name__ == '__main__':
             g = FruitProduct(id, name, cost, value, country, date)
             shop.add_product(g)
         elif action == 3:
-            # pr_name = input('Введите название продукта - ')
             data = date.today()
             split_date = date.strftime(data, '%Y-%m-%d')
             shop.del_expired_products(split_date)
