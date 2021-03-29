@@ -1,0 +1,8 @@
+{
+"response": code,
+"time": time,
+"user": 
+    {"name": name,
+    "status": "online",
+"message": message
+}

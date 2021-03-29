@@ -1,0 +1,8 @@
+{
+"action": "msg_fron_chat",
+"time": time,
+"message": message,
+"user":
+       {"name": name,
+       "status": "online"}
+}
